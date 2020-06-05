@@ -1,4 +1,45 @@
-<div id="container">
+<!-- <div id="container">
   <strong>{{ name }}</strong>
   <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-</div>
+</div> -->
+<ion-content fullscreen="true">
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
+    <ion-slide>
+      <img src="../../../assets/imgs/wide_schhol-logo.png" class="slide-image school-logo" />
+      <h2 class="slide-title">
+        Welcome to
+        <b>Online School</b>
+      </h2>
+      <p>
+        The
+        <b>WIDE SCHOOL App</b> is a confarance Metting of the school teacher and multiple student.connecting many student at a time.
+        
+
+      
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/ebook.jpg" class="slide-image school-logo" />
+      <h2 class="slide-title">What is Ionic?</h2>
+      <p>
+        <b>WIDE SCHOOL App</b>Educating Students For Success In A Changing World.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/laptop-world.jpg" class="slide-image school-logo" />
+      <h2 class="slide-title">WIDE SCHOOL App</h2>
+      <p>
+        <b>WIDE SCHOOL App</b> Education – Your Door To The Future</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/online-education.jpg" class="slide-image school-logo" />
+      <h2 class="slide-title">Ready to Play?</h2>
+      <ion-button fill="clear" (click)="startApp()">
+        Continue
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

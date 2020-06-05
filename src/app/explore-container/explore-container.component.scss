@@ -25,3 +25,65 @@
 #container a {
   text-decoration: none;
 }
+ion-toolbar {
+  --background: rgba(18, 64, 218, 1);
+  // --border-color: transparent;
+  
+}
+// .logo
+// {
+// width: 3em !important;
+
+// }
+.skipbutton
+{
+  color:white;
+}
+
+.swiper-slide {
+  display: block;
+}
+
+.slide-title {
+  margin-top: 2.8rem;
+}
+
+.slide-image {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 36px 0;
+  pointer-events: none;
+}
+.school-logo
+{
+  height: 30% !important;
+  width: 20% !important;
+}
+b {
+  font-weight: 500;
+}
+
+p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ion-color-step-600, #60646b);
+
+  b {
+    color: var(--ion-text-color, #000000);
+  }
+}
+@media screen and (max-width: 1024px)
+{
+  .slide-image {
+    // max-height: 50%;
+    // max-width: 60%;
+    margin: 36px 0;
+    pointer-events: none;
+  }
+  .school-logo
+  {
+    height: 50% !important ;
+    width: 60% !important ;
+  }
+}
